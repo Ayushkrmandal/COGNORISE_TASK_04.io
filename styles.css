@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url('Images/Background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.display-screen {
+    background-color: #e0e0e0;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 2em;
+    text-align: right; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(208, 208, 208, 0.7); 
+}
+
+.operator {
+    background-color: rgba(63, 154, 188, 0.7); 
+}
+
+.operator:hover {
+    background-color: rgba(5, 234, 250, 0.7); 
+}
+
+.clear {
+    background-color: rgba(255, 102, 102, 0.7); 
+    grid-column: span 2;
+}
+
+.backspace {
+    background-color: rgba(255, 102, 102, 0.7); 
+}
+
+.clear:hover, .backspace:hover {
+    background-color: rgba(230, 92, 92, 0.7); 
+}
